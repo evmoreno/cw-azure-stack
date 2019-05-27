@@ -129,7 +129,7 @@
         "vnetId": "[resourceId(resourceGroup().name,'Microsoft.Network/virtualNetworks', parameters('virtualNetworkName'))]",
         "subnetRef": "[concat(variables('vnetID'), '/subnets/', parameters('subnetName'))]",
         "scriptFileName": "post-config.ps1",
-        "scriptPath": "https://raw.githubusercontent.com/opsgility/lab-support-public/master/azurestack/",
+        "scriptPath": "https://raw.githubusercontent.com/evmoreno/lab-support-public/master/azurestack/",
         "fileUri": "[concat(variables('scriptPath'), variables('scriptFileName'))]",
         "adminUsername": "__administrator",
         "osDiskSizeinGB": 256,
